@@ -1,0 +1,13 @@
+<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+<h1>All Restaurants</h1>
+<ul>
+  <div class="container">
+  <% @restaurants.each do |resto| %>
+  <li><%= resto.name %> - <%= link_to 'Details', restaurant_path(resto) %></li>
+  <% end %>
+  </div>
+</ul>
+
+<div class="toto">
+<%= link_to 'Add a restaurant', new_restaurant_path %>
+</div>

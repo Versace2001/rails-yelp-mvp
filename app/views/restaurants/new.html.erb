@@ -1,0 +1,27 @@
+<h1> New Restaurant</h1>
+<%= form_for(@restaurant) do |f| %>
+  <div class="eee">
+
+    <div class="form-group">
+      <%= f.label :name %>
+      <%= f.text_field :name, class: 'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :address %>
+      <%= f.text_field :address, class: 'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :category %>
+      <%= f.text_field :category, class: 'form-control' %>
+    </div>
+
+  </div>
+
+  <div class="bouton">
+    <%= f.submit class: 'btn btn-primary' %>
+  </div>
+
+<% end %>
+
